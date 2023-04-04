@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "tuestest"
+  description: "testing"
+  annotations:
+    github.com/project-slug: hattondev/tuestest
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "tuestest"
+  links:
+    - url: https://tuestest.apps.wwtlab.net
+      title: Website
+      icon: Website
+    - url: https://app.harness.io/ng/#/account/KDANFuIkSvK5VMJ5Stni7g/cd/orgs/default/projects/PS_10015914/gitops/applications/ad54321-tuestest?agentId=prodcluster
+      title: ArgoCD/Harness
+      icon: cloud
+  tags:
+    - golang
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "tylerhatton"
